@@ -1,5 +1,5 @@
 {
   "compilerOptions": {
-    "rootDir": "./"
+    "rootDir": "./src"
   }
 }

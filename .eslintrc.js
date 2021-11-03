@@ -7,6 +7,7 @@ module.exports = {
     'jest/globals': true
   },
   extends: [
+    'eslint:recommended',
     'plugin:eslint-comments/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
@@ -21,6 +22,8 @@ module.exports = {
   },
   globals: { BigInt: true, console: true, WebAssembly: true, __buildDate__: 'readonly', __buildVersion__: 'readonly' },
   rules: {
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': ['error'],
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'eslint-comments/disable-enable-pair': [
       'error',
