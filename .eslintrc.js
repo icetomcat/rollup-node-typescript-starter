@@ -20,7 +20,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  globals: { BigInt: true, console: true, WebAssembly: true, __buildDate__: 'readonly', __buildVersion__: 'readonly' },
+  globals: { BigInt: true, console: true, WebAssembly: true, NodeJS: true, __buildDate__: 'readonly', __buildVersion__: 'readonly' },
   rules: {
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': ['error'],
